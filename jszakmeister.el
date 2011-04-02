@@ -92,3 +92,9 @@
 
 ;;;; Enable Python for SCons files
 (add-to-list 'auto-mode-alist '("Scons\\(cript\\|truct\\)" . python-mode))
+
+;; Load some plugins
+(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet-0.6.1c")
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1c/snippets")
