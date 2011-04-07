@@ -93,6 +93,18 @@
 ;;;; Enable Python for SCons files
 (add-to-list 'auto-mode-alist '("Scons\\(cript\\|truct\\)" . python-mode))
 
+(setq starter-kit-packages
+      (append starter-kit-packages (list 'haml-mode
+                                         'sass-mode
+                                         'color-theme
+                                         'highlight-80+
+                                         'json
+                                         'lusty-explorer
+                                         'markdown-mode
+                                         'org)))
+
+(starter-kit-elpa-install)
+
 ;; Load some plugins
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet-0.6.1c")
 (require 'yasnippet)
