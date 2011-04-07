@@ -110,3 +110,8 @@
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1c/snippets")
+
+;; Load my color theme
+(require 'color-theme)
+(autoload 'color-theme-empty-void "empty-void-theme" "" t nil)
+
