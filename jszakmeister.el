@@ -77,6 +77,8 @@
 ;;;; Enable Python for SCons files
 (add-to-list 'auto-mode-alist '("Scons\\(cript\\|truct\\)" . python-mode))
 
+;;;; End of Tim's config
+
 (setq starter-kit-packages
       (append starter-kit-packages (list 'haml-mode
                                          'sass-mode
