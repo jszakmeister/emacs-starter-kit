@@ -113,3 +113,7 @@
 
 ;; Don't soft-wrap lines
 (setq-default truncate-lines t)
+
+;; Bring in the better ido fuzzy matcher
+(require 'better-ido-matching)
+
