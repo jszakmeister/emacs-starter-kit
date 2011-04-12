@@ -114,6 +114,9 @@
 ;; Don't soft-wrap lines
 (setq-default truncate-lines t)
 
+;; Set the default font
+(set-default-font "Droid Sans Mono-16")
+
 ;; Bring in the better ido fuzzy matcher
 (require 'better-ido-matching)
 
