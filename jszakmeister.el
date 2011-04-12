@@ -116,3 +116,6 @@
 
 ;; Bring in the better ido fuzzy matcher
 (require 'better-ido-matching)
+
+;; Enable ANSI colors in shell mode
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
