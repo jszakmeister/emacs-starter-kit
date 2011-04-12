@@ -21,10 +21,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Taken from Tim's emacs config
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Set colors for dark background
-(add-to-list 'default-frame-alist '(cursor-color . "#ff0000"))
-(add-to-list 'default-frame-alist '(foreground-color . "lightgrey"))
-(add-to-list 'default-frame-alist '(background-color . "black"))
 
 ;;;; Set focus follows mouse
 (setq focus-follows-mouse t)
