@@ -105,6 +105,8 @@
 ;; Load my color theme
 (require 'color-theme)
 (autoload 'color-theme-empty-void "empty-void-theme" "" t nil)
+(autoload 'color-theme-john "john-theme" "" t nil)
+(color-theme-john)
 
 ;; Don't clutter up directories with files~
 (setq auto-save-file-name-transforms
