@@ -1,5 +1,9 @@
 ;; My color theme.
 ;;
+;; It's a modified version of the blackboard theme, that incorporates
+;; some of my settings from SlickEdit, and is made to degrade well
+;; at the terminal.
+;;
 ;; Based on JD Huntington's Blackboard theme, which has the following license:
 ;;
 ;; MIT License Copyright (c) 2008 JD Huntington <jdhuntington at gmail dot com>
