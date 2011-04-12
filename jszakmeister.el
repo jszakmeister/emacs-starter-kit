@@ -78,9 +78,6 @@
 ;; Show which function name in mode line
 (which-function-mode t)
 
-;; Enable column numbers
-(column-number-mode t)
-
 ;;;; Enable Python for SCons files
 (add-to-list 'auto-mode-alist '("Scons\\(cript\\|truct\\)" . python-mode))
 
@@ -121,4 +118,3 @@
 
 ;; Bring in the better ido fuzzy matcher
 (require 'better-ido-matching)
-
