@@ -2,6 +2,8 @@
 ;;    Emacs: Better Ido Flex-Matching
 ;; <http://scottfrazersblog.blogspot.com/2009/12/emacs-better-ido-flex-matching.html>
 
+(provide 'better-ido-matching)
+
 (defun my-ido-fuzzy-match (str items)
   "Better ido fuzzy matching"
   (let ((str-len (length str)))
