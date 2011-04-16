@@ -119,3 +119,7 @@
 
 ;; Enable ANSI colors in shell mode
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+;; Bind dabbrev-expand to ctrl-p... it's a vim habit
+;; that I'll never break
+(global-set-key (kbd "C-p") 'hippie-expand)
