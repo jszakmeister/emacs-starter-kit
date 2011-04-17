@@ -144,3 +144,6 @@
 
 ;; Enable column numbers in the mode line
 (column-number-mode t)
+
+;; Make the delete key work correctly
+(normal-erase-is-backspace-mode t)
