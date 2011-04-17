@@ -112,7 +112,8 @@
 (setq-default truncate-lines t)
 
 ;; Set the default font
-(set-frame-font "Droid Sans Mono-16")
+(set-face-attribute 'default nil
+                    :family "Droid Sans Mono" :height 160)
 
 ;; Bring in the better ido fuzzy matcher
 (require 'better-ido-matching)
