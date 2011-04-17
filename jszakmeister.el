@@ -123,3 +123,20 @@
 ;; Bind dabbrev-expand to ctrl-p... it's a vim habit
 ;; that I'll never break
 (global-set-key (kbd "C-p") 'hippie-expand)
+
+;; Add a function to copy lines.  Why something like this isn't
+;; in Emacs by default is beyond me.
+;; Take from <http://www.emacswiki.org/emacs/CopyingWholeLines>
+(defun copy-line (arg)
+  "Copy lines (as many as prefix argument) in the kill ring"
+  (interactive "p")
+  (kill-ring-save (line-beginning-position)
+                  (line-beginning-position (+ 1 arg)))
+  (message "%d line%s copied" arg (if (= 1 arg) "" "s")))
+
+;; Bind copy-lines to a keystroke
+(global-set-key "\C-c\C-k" 'copy-line)
+
+;; Make the ctrl arrow keys do word movements
+(global-set-key (kbd "M-[ 5 d") 'backward-word)
+(global-set-key (kbd "M-[ 5 c") 'forward-word)
