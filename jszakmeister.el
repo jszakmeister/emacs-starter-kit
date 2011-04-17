@@ -56,7 +56,7 @@
 
 ;;;; Set default mode line appearance
 ;; Move function display before mode display
-(setq default-mode-line-format
+(setq mode-line-format
       '("-"
 	mode-line-mule-info
 	mode-line-modified
@@ -112,7 +112,7 @@
 (setq-default truncate-lines t)
 
 ;; Set the default font
-(set-default-font "Droid Sans Mono-16")
+(set-frame-font "Droid Sans Mono-16")
 
 ;; Bring in the better ido fuzzy matcher
 (require 'better-ido-matching)
