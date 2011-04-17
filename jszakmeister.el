@@ -140,3 +140,6 @@
 ;; Make the ctrl arrow keys do word movements
 (global-set-key (kbd "M-[ 5 d") 'backward-word)
 (global-set-key (kbd "M-[ 5 c") 'forward-word)
+
+;; Enable column numbers in the mode line
+(column-number-mode t)
