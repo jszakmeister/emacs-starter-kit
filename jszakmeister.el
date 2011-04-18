@@ -138,6 +138,12 @@
 ;; Bind copy-lines to a keystroke
 (global-set-key "\C-c\C-k" 'copy-line)
 
+(add-hook 'python-mode-hook 'my-python-customizations)
+(defun my-python-customizations ()
+  "set up my personal customizations for python mode"
+  ;; put other customizations in here
+  (define-key python-mode-map (kbd "C-c C-k") 'copy-line))
+
 ;; Make the ctrl arrow keys do word movements
 (global-set-key (kbd "M-[ 5 d") 'backward-word)
 (global-set-key (kbd "M-[ 5 c") 'forward-word)
