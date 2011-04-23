@@ -155,3 +155,6 @@
 (if (not (null window-system))
     (if (eq system-type 'darwin)
         (normal-erase-is-backspace-mode t))
+
+(eval-after-load "ispell"
+  (setq-default ispell-program-name "hunspell"))
