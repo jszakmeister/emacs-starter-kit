@@ -1,0 +1,7 @@
+#name : "see also" block
+#expand-env: ((yas/indent-line 'none))
+# --
+.. seealso::
+   ${1:information goes here}
+
+$0
