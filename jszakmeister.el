@@ -158,10 +158,5 @@
 ;; Enable column numbers in the mode line
 (column-number-mode t)
 
-;; On Mac, fix the damn delete sequence
-(if (not (null window-system))
-    (if (eq system-type 'darwin)
-        (normal-erase-is-backspace-mode t))
-
 (eval-after-load "ispell"
   (setq-default ispell-program-name "hunspell"))
