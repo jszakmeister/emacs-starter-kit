@@ -151,6 +151,12 @@
   ;; put other customizations in here
   (define-key python-mode-map (kbd "C-c C-k") 'copy-line))
 
+(add-hook 'latex-mode-hook 'my-latex-customizations)
+(defun my-latex-customizations ()
+  "set up my personal customizations for latex mode"
+  ;; put other customizations in here
+  (define-key latex-mode-map (kbd "C-c C-k") 'copy-line))
+
 ;; Make the ctrl arrow keys do word movements
 (global-set-key (kbd "M-[ 5 d") 'backward-word)
 (global-set-key (kbd "M-[ 5 c") 'forward-word)
