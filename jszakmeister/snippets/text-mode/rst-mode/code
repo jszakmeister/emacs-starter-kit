@@ -2,6 +2,7 @@
 #expand-env: ((yas/indent-line 'none))
 # --
 .. code-block:: ${1:python}
+
    ${2:code goes here}
 
 $0

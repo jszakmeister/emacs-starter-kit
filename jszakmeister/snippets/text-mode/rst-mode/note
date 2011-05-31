@@ -2,6 +2,7 @@
 #expand-env: ((yas/indent-line 'none))
 # --
 .. note::
+
    ${1:information goes here}
 
 $0
